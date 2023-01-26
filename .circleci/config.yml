@@ -11,8 +11,8 @@ jobs:
       - setup_remote_docker:
           version: 17.05.0-ce
       - run: sudo apt-get install libpng-dev
-      - run: sudo npm cache clean -f && sudo npm install -g n && sudo n stable 
-      - run: sudo npm install -g pngquant-
+      - run: sudo npm cache clean -f && sudo npm install -g n && sudo n stable
+      - run: npm install
       - run: |
           sudo tee /etc/apt/sources.list.d/pgdg.list <<END
             deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
