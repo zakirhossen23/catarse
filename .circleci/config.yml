@@ -12,7 +12,7 @@ jobs:
           version: 17.05.0-ce
       - run: sudo apt-get install libpng-dev
       - run: sudo npm cache clean -f && sudo npm install -g n && sudo n latest 
-      - run: npm install
+      - run: npm install --force
       - run: |
           sudo tee /etc/apt/sources.list.d/pgdg.list <<END
             deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
