@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: cimg/node:16.13.2
-      - image: circleci/ruby:2.7.1-node-browsers
+      - image: circleci/ruby-node-browser:ruby-2.7.6-node-16
       - image: postgres:11.5
         environment:
           POSTGRES_DB: catarse_test
