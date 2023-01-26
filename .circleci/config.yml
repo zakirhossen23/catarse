@@ -2,7 +2,6 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cimg/node:16.13.2
       - image: circleci/ruby:2.7.1-node-browsers
       - image: postgres:11.5
         environment:
@@ -11,6 +10,7 @@ jobs:
       - checkout
       - setup_remote_docker:
           version: 17.05.0-ce
+      - run: curl https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | sh && npm install
       - run: |
           sudo tee /etc/apt/sources.list.d/pgdg.list <<END
             deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
@@ -20,7 +20,6 @@ jobs:
       - run: sudo apt install postgresql-client-11
       - run: gem install bundler:1.17.3
       - run: bundle install
-      - run: sudo npm install -g npm && npm install
       - run: RAILS_ENV=test DATABASE_URL=postgres://postgres:example@localhost:5432/catarse_test bundle exec rake db:migrate
       - run: RAILS_ENV=test DATABASE_URL=postgres://postgres:example@localhost:5432/catarse_test bundle exec rspec spec
 
