@@ -11,8 +11,7 @@ jobs:
       - setup_remote_docker:
           version: 17.05.0-ce
       - run: sudo apt-get install libpng-dev
-      - run: sudo npm cache clean -f && sudo npm install -g n && sudo n stable 
-      - run: npm uninstall phantomjs && npm install phantomjs -g
+      - run: sudo npm cache clean -f && sudo npm install -g n && sudo n latest 
       - run: npm install
       - run: |
           sudo tee /etc/apt/sources.list.d/pgdg.list <<END
