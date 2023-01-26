@@ -1,9 +1,7 @@
-## THIS REPO IS DEPRECATED, PLEASE SEND ALL PULL REQUESTS TO https://github.com/common-group/services-core INSTEAD.
-
 # Catarse
-[![Circle CI](https://circleci.com/gh/catarse/catarse/tree/master.svg?style=svg)](https://circleci.com/gh/catarse/catarse/tree/master)
-[![Coverage Status](https://coveralls.io/repos/catarse/catarse/badge.svg?branch=master)](https://coveralls.io/r/catarse/catarse?branch=master)
-[![Code Climate](https://codeclimate.com/github/catarse/catarse/badges/gpa.svg)](https://codeclimate.com/github/catarse/catarse)
+[![Circle CI](https://circleci.com/gh/catarse/catarse/tree/master.svg?style=svg)](https://circleci.com/gh/zakirhossen23/catarse/tree/master)
+[![Coverage Status](https://coveralls.io/repos/catarse/catarse/badge.svg?branch=master)](https://coveralls.io/r/zakirhossen23/catarse?branch=master)
+[![Code Climate](https://codeclimate.com/github/catarse/catarse/badges/gpa.svg)](https://codeclimate.com/github/zakirhossen23/catarse)
 
 The first crowdfunding platform from Brazil
 
