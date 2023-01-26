@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:18.13.0
+      - image: cimg/node:16.13.2
       - image: circleci/ruby:2.7.1-node-browsers
       - image: postgres:11.5
         environment:
